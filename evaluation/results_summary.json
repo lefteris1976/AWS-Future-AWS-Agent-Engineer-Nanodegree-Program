@@ -1,0 +1,12 @@
+{
+  "job_name": "support-chatbot-eval-run-1",
+  "region": "us-east-1",
+  "evaluation_date": "2026-08-25",
+  "inference_source": "my-support-chatbot",
+  "evaluator_model": "amazon.nova-pro-v1:0",
+  "metric": "Builtin.Correctness",
+  "prompt_count": 7,
+  "valid_jsonl_records": 7,
+  "harness_errors": 0,
+  "average_correctness": 1.0
+}

@@ -70,12 +70,11 @@ Additional screenshots in [`evidence/`](evidence/) show FAQ grounding, unsupport
 
 ```text
 .
-├── prompts/system_prompt.txt          # Public portfolio version of the final prompt
+├── prompts/prompt_design.md           # Public behaviour contract and pseudocode
 ├── knowledge/online_shop_faq.md       # Fictional grounding document
 ├── tests/harness-tests.json           # Seven behavioural test specifications
 ├── evaluation/                        # Sanitized metrics and observations
 ├── evidence/                          # Redacted screenshots from the completed run
-├── scripts/render_prompt.py           # Injects the FAQ into the prompt
 └── scripts/validate_portfolio.py      # Offline integrity and secret checks
 ```
 
@@ -85,10 +84,9 @@ No AWS credentials or third-party packages are required for the public validatio
 
 ```bash
 python scripts/validate_portfolio.py
-python scripts/render_prompt.py > /tmp/support-agent-system-prompt.txt
 ```
 
-The AWS deployment scripts are not included because they came from the course starter package. The repository focuses on the work that demonstrates prompt engineering, agent routing, tool-call gating, grounding, adversarial testing, and evaluation.
+The verbatim deployed system prompt and AWS deployment scripts are not published. The public behaviour contract, redacted prompt excerpts, tests, and evidence demonstrate the prompt engineering, agent routing, tool-call gating, grounding, adversarial testing, and evaluation work without exposing reusable internal instructions or course starter code.
 
 ## Design decisions
 
